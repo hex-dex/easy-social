@@ -2,7 +2,11 @@
   "name": "package-based",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx run-many --target=start",
+    "start:server": "nx run server:start",
+    "start:dev": "nx run server:start"
+  },
   "private": true,
   "dependencies": {},
   "devDependencies": {
