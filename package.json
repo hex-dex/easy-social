@@ -3,18 +3,38 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx run-many --target=start",
-    "start:server": "nx run server:start",
-    "start:dev": "nx run server:start"
+    "start": "nx serve",
+    "build": "nx build",
+    "test": "nx test"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "devDependencies": {
     "@nrwl/nx-cloud": "latest",
+    "@nrwl/cli": "15.0.6",
+    "@nrwl/cypress": "15.0.6",
+    "@nrwl/eslint-plugin-nx": "15.0.6",
+    "@nrwl/jest": "15.0.6",
+    "@nrwl/linter": "15.0.6",
+    "@nrwl/react": "15.0.6",
+    "@nrwl/web": "15.0.6",
+    "@nrwl/workspace": "15.0.6",
+    "@testing-library/react": "13.4.0",
+    "@types/jest": "28.1.1",
+    "@types/node": "18.7.18",
+    "@types/react": "18.0.20",
+    "@types/react-dom": "18.0.6",
+    "@vitejs/plugin-react": "^2.2.0",
+    "vite": "^3.2.0",
     "nx": "15.0.4",
-    "prettier": "^2.6.2"
-  },
-  "workspaces": [
-    "apps/*"
-  ]
+    "prettier": "^2.6.2",
+    "nodemon": "^2.0.20"
+  }
 }
